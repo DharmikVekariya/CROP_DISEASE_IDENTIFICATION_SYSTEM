@@ -24,7 +24,7 @@ def app():
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-    json_file = open('/tometo.json', 'r')
+    json_file = open('tometo.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
